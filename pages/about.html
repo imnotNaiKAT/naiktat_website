@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>奶KAT - 关于</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body onload="checkAuth()">
+    <div id="particles"></div>
+    
+    <!-- 导航栏 -->
+    <div class="nav-bar">
+        <div class="nav-container">
+            <button class="nav-btn" data-page="about.html">关于</button>
+            <button class="nav-btn" data-page="industry.html">产业</button>
+            <button class="nav-btn" data-page="contact.html">联系</button>
+            <button class="nav-btn" onclick="logout()">退出登录</button>
+        </div>
+    </div>
+
+    <!-- 页面内容 -->
+    <div class="page-container">
+        <h1 class="page-title">关于 <span>奶KAT</span></h1>
+        <div class="card">
+            <h2>品牌简介</h2>
+            <p>奶KAT是一个专注于工具研发、创意产品、游戏开发的独立技术品牌。我们以极简、高效、科技感为核心，打造面向未来的数字化工具与内容生态，坚持原创与极致体验。</p>
+            <br>
+            <p>自创立以来，奶KAT始终聚焦用户真实需求，拒绝冗余设计，让每一款产品都具备「轻量、实用、炫酷」的核心特质。我们相信，好的技术产品应当像空气一样，默默解决问题，却不增加用户的使用负担。</p>
+        </div>
+        <div class="card">
+            <h2>发展理念</h2>
+            <p>技术服务于人，创意改变体验。奶KAT不追求短期的流量红利，而是致力于打造能够长期为用户创造价值的产品，从ClassHelper教学辅助工具到原创游戏合集，每一个项目都承载着我们对「好用」的极致追求。</p>
+        </div>
+    </div>
+
+    <script src="../assets/js/particles.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

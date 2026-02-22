@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>奶KAT - 登录</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div id="particles"></div>
+    <div class="main-container">
+        <div class="login-card">
+            <h1 class="login-title">奶<span>KAT</span> 系统登录</h1>
+            <input type="text" id="username" placeholder="请输入用户名" class="login-input">
+            <input type="password" id="password" placeholder="请输入密码" class="login-input">
+            <button id="loginBtn" class="login-btn">安全登录</button>
+            <div id="loginMsg" class="login-msg"></div>
+        </div>
+    </div>
+
+    <script src="assets/js/particles.js"></script>
+    <!-- 加密后的核心JS（实际部署用加密版，这里先放未加密便于测试） -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // 初始化登录页粒子动画
+        initParticles();
+        // 绑定登录按钮事件
+        document.getElementById('loginBtn').addEventListener('click', handleLogin);
+    </script>
+</body>
+</html>
